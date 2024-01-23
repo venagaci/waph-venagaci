@@ -7,7 +7,7 @@
 
 **Email**: venagaci@mail.uc.edu
 
-![Charan's headshot](/images/headshot.jpg)
+![Charan's headshot](images/headshot.jpg)
 
 ## Repository information
 
