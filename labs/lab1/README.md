@@ -97,12 +97,12 @@ Here is the index.c program I have used.
           printf("<!DOCTYPE html>\n");
           printf("<html>\n");
           printf("<head>\n");
-          printf("<title>Page Title</title>\n");
+          printf("<title>Topic in Computer Systems</title>\n");
           printf("</head>\n");
           printf("<body>\n");
           printf("\n");
-          printf("<h1>This is a Heading</h1>\n");
-          printf("<p>This is a paragraph.</p>\n");
+          printf("<h1>My name is Charan Sai Venaganti</h1>\n");
+          printf("<p>I am pursuing my masters in information technology.</p>\n");
           printf("\n");
           printf("</body>\n");
           printf("</html>\n");
@@ -141,6 +141,7 @@ echo $_REQUEST["data"];
 
 4. Then I went to the browser the page with input data in the URL
 http://localhost/echo.php?data=Charan Sai Venaganti
+ 
 
 SS- browser screenshot of my name
 
