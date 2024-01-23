@@ -25,28 +25,20 @@ I used a network packet analyzer called Wireshark which tried to capture network
 
  ![P1](/images/P1T1HTTPrequest.png)
 
-
-
-
+Caption: 
  
 
  ![P1](/images/P1T1HTTPresponse.png)
 
- 
+ Caption: 
+
 
 
 
 
  ![P1](/images/P1T1HTTPStream.png)
 
-
-
-
-
-
-
-
- 
+Caption:  
 
  
 
