@@ -23,7 +23,7 @@ I used a network packet analyzer called Wireshark which tried to capture network
 3. After opening netwrok analyser window I have clicked on any which includes all interfaces to start capturing packet. And then Clicked start to start capturing.
 4. After filtering out by typing http in search bar I got request and response messages and given below.
 
-![P1 T1 HTTP request](/images/P1 T1 HTTP request.png.)
+![P1 T1 HTTP request](/images/P1 T1 HTTP request.png)
 SS2
 SS3-HTTP STREAM
 
