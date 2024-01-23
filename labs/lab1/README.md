@@ -25,6 +25,8 @@ I used a network packet analyzer called Wireshark which tried to capture network
 
  ![HTTP req](/images/P1T1HTTP-request.png)
 
+  ![HTTP req](/images/P1T1HTTPresponse.png)
+
 
 
 SS2
