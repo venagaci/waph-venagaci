@@ -135,7 +135,9 @@ Here is the index.c program I have used.
 
           return 0;
      }
-      
+
+
+   
       
 ![HTTP req](/images/P2T1(ii)indexcterminalss.png)
 
@@ -155,6 +157,11 @@ a. Summarize and demonstrate with a screenshot that you have successfully develo
 2. After that I created a new file name helloworld.php in folder labs/lab1 in my private repository with the similar content provided by the professor.
 3. The I deployed the code to the webserver $ sudo cp helloworld.php /var/www/html
 4. Then I went to browser and typed http://localhost/helloworld.php
+
+
+![HTTP](/images/P2T2(i)helloworldphpbrowserSS.png)
+
+Caption: 
 
 SS- browser php output. 
 
