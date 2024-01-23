@@ -220,7 +220,7 @@ Caption :
 
 SS- browser screenshot of charan sai venaganti using CURL.
 
-![HTTP](/images/P3T3(ii)POST-CURLBROWSERRESPONSESS.png)
+![HTTP](/images/P3T3(ii)POSTCURLBROWSERRESPONSESS.png)
 
 Caption: 
 
@@ -231,7 +231,7 @@ Caption:
 
 
 
-![HTTP](/images/P3T3(ii)CURLHTTPSTREAM-OFWIRESHARK.png)
+![HTTP](/images/P3T3(ii)CURLHTTPSTREAMOFWIRESHARK.png)
 
 Caption: 
 
