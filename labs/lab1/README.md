@@ -88,25 +88,30 @@ b. Summarize and demonstrate with a screenshot that you can write another C CGI 
 
 Here is the index.c program I have used.
 ### index.c
-#include <stdio.h>
 
-int main() {
-    printf("Content-Type: text/plain; charset=utf-8\n\n");
-    printf("<!DOCTYPE html>\n");
-    printf("<html>\n");
-    printf("<head>\n");
-    printf("<title>Page Title</title>\n");
-    printf("</head>\n");
-    printf("<body>\n");
-    printf("\n");
-    printf("<h1>This is a Heading</h1>\n");
-    printf("<p>This is a paragraph.</p>\n");
-    printf("\n");
-    printf("</body>\n");
-    printf("</html>\n");
+ Included file `helloworld.c`:
+   ```C
+      #include <stdio.h>
+      int main() {
+          printf("Content-Type: text/plain; charset=utf-8\n\n");
+          printf("<!DOCTYPE html>\n");
+          printf("<html>\n");
+          printf("<head>\n");
+          printf("<title>Page Title</title>\n");
+          printf("</head>\n");
+          printf("<body>\n");
+          printf("\n");
+          printf("<h1>This is a Heading</h1>\n");
+          printf("<p>This is a paragraph.</p>\n");
+          printf("\n");
+          printf("</body>\n");
+          printf("</html>\n");
 
-    return 0;
-}
+          return 0;
+     }
+      
+      
+
 
 SS- browser screenshot of index.c output
 
