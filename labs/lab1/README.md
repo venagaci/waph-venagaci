@@ -25,17 +25,17 @@ I used a network packet analyzer called Wireshark which tried to capture network
 
  ![P1](/images/P1T1HTTPrequest.png)
 
-Caption: Examining the HTTP Request
+### Caption: Examining the HTTP Request
  
 
 ![P1](/images/P1T1HTTPresponse.png)
 
-Caption:  Examining the HTTP Response 
+### Caption:  Examining the HTTP Response 
 
 
 ![P1](/images/P1T1HTTPStream.png)
 
-Caption: Here is the Overall HTTP Stream 
+### Caption: Here is the Overall HTTP Stream 
 
  
 
@@ -56,11 +56,11 @@ connection to a server to send and receive data to/from the server.In this task 
 
 ![HTTP req](/images/P1T2(i).png)
 
-Caption: Here is the screenshot of the terminal showing the HTTP request I typed
+### Caption: Here is the screenshot of the terminal showing the HTTP request I typed
 
 ![HTTP req](/images/P1T2(iii)Response.png)
 
-Caption: Here is the screenshot of the wireshark showing the HTTP response. 
+### Caption: Here is the screenshot of the wireshark showing the HTTP response. 
 
 
 
@@ -68,7 +68,7 @@ Caption: Here is the screenshot of the wireshark showing the HTTP response.
 
 ![HTTP req](/images/P1T2(ii)Request.png)
 
-Caption: Here is the screenshot of the request in the wireshark.
+### Caption: Here is the screenshot of the request in the wireshark.
 
 
 Yes there are several differences:
@@ -78,7 +78,7 @@ The second HTTP request lacks key headers such as User-Agent, Accept, Accept-Lan
 
 ![HTTP req](/images/P1T2(iii)Response.png)
 
-Caption: Here is the screenshot of the response in the wireshark.
+### Caption: Here is the screenshot of the response in the wireshark.
 
 
 
@@ -103,7 +103,7 @@ $ sudo systemctl restart apache2.
 
 ![HTTP req](/images/P2T1(i).png)
 
-Caption: Here is the screenshot showing the output of the CGI program helloworld.c in the browser
+### Caption: Here is the screenshot showing the output of the CGI program helloworld.c in the browser
 
  
 b. Summarize and demonstrate with a screenshot that you can write another C CGI program and deploy it with a simple HTML template provided on https://www.w3schools.com/html/Links to an external site. with proper title, heading, and paragraph, i.e., the course and your information should be there. Include the source code of the file in the report. An example of code inclusion is below.
@@ -143,12 +143,12 @@ Here is the index.c program I have used.
       
 ![HTTP req](/images/P2T1(ii)indexcterminalss.png)
 
-Caption: Screenshot of my terminal showing the compilation of the CGI index.c program and execution.
+### Caption: Screenshot of my terminal showing the compilation of the CGI index.c program and execution.
 
 
 ![HTTP req](/images/P2T1(ii)indexcbrowserSS.png)
 
-Caption: Screenshot of my browser showing the output of the index.c program
+### Caption: Screenshot of my browser showing the output of the index.c program
 
 
 ###  Task 2 (10 pts). A simple PHP Web Application with user input.
@@ -163,7 +163,7 @@ a. Summarize and demonstrate with a screenshot that you have successfully develo
 
 ![HTTP](/images/P2T2(i)helloworldphpbrowserSS.png)
 
-Caption: Screenshot that shows I successfully developed a simple helloworld.php PHP page with my name and PHP configuration
+### Caption: Screenshot that shows I successfully developed a simple helloworld.php PHP page with my name and PHP configuration
 
 
 
@@ -184,7 +184,7 @@ http://localhost/echo.php?data=Charan Sai Venaganti
 
 ![HTTP](/images/P2T2(ii)echophpbrowsrSS.png)
 
-Caption: Here is the screenshot of my browser showing the output of echo.php with my name.
+### Caption: Here is the screenshot of my browser showing the output of echo.php with my name.
 
 
 #### Yes there are risks in this process:
@@ -199,15 +199,14 @@ Using $_REQUEST[] in PHP to retrieve input is considered potentially dangerous d
 3. Here I clicked enter on the browser to start the process.
 4. I went to wireshark and filtered out http requests and responses with echo.php name.Upon right clicking on request and response I can see the code of it.
 
-SS SS of request and response from wireshark
 
 ![HTTP](/images/P3T3(i)Request.png)
 
-Caption: Screenshot of the request I made in the wireshark with my name
+### Caption: Screenshot of the request I made in the wireshark with my name
 
 ![HTTP](/images/P3T3(ii)Response.png)
 
-Caption : Screenshot of the response I made in the wireshark with my name.
+### Caption : Screenshot of the response I made in the wireshark with my name.
 
 
 
@@ -216,22 +215,21 @@ Caption : Screenshot of the response I made in the wireshark with my name.
 1. Before using the curl , I installed curl using $ sudo apt-get install curl.After installing
 2. I typed the request with input from a terminal $ curl -X POST http://localhost/echo.php -d "data=Hello world, Charan Sai Venaganti"
 
-SS- browser screenshot of charan sai venaganti using CURL.
 
 ![HTTP](/images/P3T3(ii)POSTCURLBROWSERRESPONSESS.png)
 
-Caption: Screenshot of my browser showing the output using CURL with my name.
+### Caption: Screenshot of my browser showing the output using CURL with my name.
 
 
 ![HTTP](/images/P3T3(ii)POSTCURLREQUESTOFWIRESHARK.png)
 
-Caption: Screenshot of the request I made in the wireshark.
+### Caption: Screenshot of the request I made in the wireshark.
 
 
 
 ![HTTP](/images/P3T3(ii)CURLHTTPSTREAMOFWIRESHARK.png)
 
-Caption: Screenshot of the HTTP Stream in the wireshark
+### Caption: Screenshot of the HTTP Stream in the wireshark
 
 #### c. Compare the similarity/difference between HTTP POST Request and HTTP GET Request and between the two HTTP Responses above. **(2.5 pts)**    
 
