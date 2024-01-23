@@ -23,7 +23,7 @@ I used a network packet analyzer called Wireshark which tried to capture network
 3. After opening netwrok analyser window I have clicked on any which includes all interfaces to start capturing packet. And then Clicked start to start capturing.
 4. After filtering out by typing http in search bar I got request and response messages and given below.
 
- ![HTTP req](/images/P1T1HTTP-request.png)
+ ![HTTP req](/images/P1T1HTTPrequest.png)
 
   ![HTTP req](/images/P1T1HTTPresponse.png)
 
