@@ -54,8 +54,10 @@ connection to a server to send and receive data to/from the server.In this task 
    
 3. Then I saw the data response from the server (HTTP Response). and I Stoped Wireshark packets capture and examined the HTTP Request and Response messages and compared with similar ones in Task 1.
 
-SS4- terminal screenshot should be here which has two commands with http/1.0
 
+ 
+Caption: 
+ 
 
 #### A screenshot of your terminal showing the HTTP Request (you typed) and HTTP response from the server.
 
