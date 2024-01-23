@@ -135,7 +135,7 @@ Here is the index.c program I have used.
 
           return 0;
      }
-
+```
 
    
       
@@ -163,7 +163,6 @@ a. Summarize and demonstrate with a screenshot that you have successfully develo
 
 Caption: 
 
-SS- browser php output. 
 
 
 #### b. Demonstrate that you developed and deployed an echo Web application in PHP, e.g., `echo.php` with a screenshot with your name in the data. Include the source code of the file in the report and discuss if there are any security risks in this simple web application.
@@ -180,9 +179,11 @@ echo $_REQUEST["data"];
 
 4. Then I went to the browser the page with input data in the URL
 http://localhost/echo.php?data=Charan Sai Venaganti
- 
 
-SS- browser screenshot of my name
+![HTTP](/images/P2T2(ii)echophpbrowsrSS.png)
+
+Caption; 
+
 
 #### Yes there are risks in this process:
 Using $_REQUEST[] in PHP to retrieve input is considered potentially dangerous due to security vulnerabilities. This superglobal combines data from $_GET, $_POST, and $_COOKIE, making it challenging to discern the source of the data and increasing the risk of unintended overwriting. The inclusion of cookie data exposes the application to potential attacks, and the ambiguity of data sources can be exploited by malicious actors. Security best practices recommend using $_GET for read-only requests and $_POST for modifying data, while using $_REQUEST undermines this distinction. Additionally, it can increase the risk of injection attacks if the data is utilized in security-sensitive operations. Therefore, it is advisable to explicitly use $_GET or $_POST based on the nature of the request and implement proper input validation and sanitation to enhance security.
@@ -198,6 +199,13 @@ Using $_REQUEST[] in PHP to retrieve input is considered potentially dangerous d
 
 SS SS of request and response from wireshark
 
+![HTTP](/images/P3T3(i)Request.png)
+
+Caption: 
+
+![HTTP](/images/P3T3(ii)Response.png)
+
+Caption : 
 
 
 
@@ -212,7 +220,20 @@ SS SS of request and response from wireshark
 
 SS- browser screenshot of charan sai venaganti using CURL.
 
-SS- POST screenshot from wireshark which has my name.
+![HTTP](/images/P3T3(ii)POST-CURLBROWSERRESPONSESS.png)
+
+Caption: 
+
+
+![HTTP](/images/P3T3(ii)POSTCURLREQUESTOFWIRESHARK.png)
+
+Caption: 
+
+
+
+![HTTP](/images/P3T3(ii)CURLHTTPSTREAM-OFWIRESHARK.png)
+
+Caption: 
 
 #### c. Compare the similarity/difference between HTTP POST Request and HTTP GET Request and between the two HTTP Responses above. **(2.5 pts)**    
 
