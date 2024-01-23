@@ -24,6 +24,8 @@ I used a network packet analyzer called Wireshark which tried to capture network
 4. After filtering out by typing http in search bar I got request and response messages and given below.
 
 ![x](images/P1 T1 HTTP request.png)
+
+
 SS2
 SS3-HTTP STREAM
 
