@@ -137,12 +137,14 @@ Here is the index.c program I have used.
      }
       
       
-![HTTP req](/images/P2T1(ii)index.cterminal-ss.png)
+![HTTP req](/images/P2T1(ii)indexcterminalss.png)
 
 Caption: 
 
 
-![HTTP req](/images/P2T1(ii)index.cbrowser-SS.png)
+![HTTP req](/images/P2T1(ii)indexcbrowserSS.png)
+
+Caption: 
 
 
 ###  Task 2 (10 pts). A simple PHP Web Application with user input.
