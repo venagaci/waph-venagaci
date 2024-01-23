@@ -25,20 +25,17 @@ I used a network packet analyzer called Wireshark which tried to capture network
 
  ![P1](/images/P1T1HTTPrequest.png)
 
-Caption: 
+Caption: Examining the HTTP Request
  
 
 ![P1](/images/P1T1HTTPresponse.png)
 
- Caption: 
-
-
-
+Caption:  Examining the HTTP Response 
 
 
 ![P1](/images/P1T1HTTPStream.png)
 
-Caption:  
+Caption: Here is the Overall HTTP Stream 
 
  
 
@@ -59,14 +56,19 @@ connection to a server to send and receive data to/from the server.In this task 
 
 ![HTTP req](/images/P1T2(i).png)
 
-Caption: 
+Caption: Here is the screenshot of the terminal showing the HTTP request I typed
+
+![HTTP req](/images/P1T2(iii)Response.png)
+
+Caption: Here is the screenshot of the wireshark showing the HTTP response. 
+
 
 
 #### A screenshot of the HTTP Request message (you typed in telnet above) in Wireshark as in Task 1. Is there any difference between this HTTP Request message and the one the browser sent in Task 1? Hints: What fields are missing in this request compared to the one the browser sent?
 
 ![HTTP req](/images/P1T2(ii)Request.png)
 
-Caption: 
+Caption: Here is the screenshot of the request in the wireshark.
 
 
 Yes there are several differences:
@@ -76,7 +78,7 @@ The second HTTP request lacks key headers such as User-Agent, Accept, Accept-Lan
 
 ![HTTP req](/images/P1T2(iii)Response.png)
 
-Caption: 
+Caption: Here is the screenshot of the response in the wireshark.
 
 
 
@@ -101,7 +103,7 @@ $ sudo systemctl restart apache2.
 
 ![HTTP req](/images/P2T1(i).png)
 
-Caption: 
+Caption: Here is the screenshot showing the output of the CGI program helloworld.c in the browser
 
  
 b. Summarize and demonstrate with a screenshot that you can write another C CGI program and deploy it with a simple HTML template provided on https://www.w3schools.com/html/Links to an external site. with proper title, heading, and paragraph, i.e., the course and your information should be there. Include the source code of the file in the report. An example of code inclusion is below.
@@ -141,12 +143,12 @@ Here is the index.c program I have used.
       
 ![HTTP req](/images/P2T1(ii)indexcterminalss.png)
 
-Caption: 
+Caption: Screenshot of my terminal showing the compilation of the CGI index.c program and execution.
 
 
 ![HTTP req](/images/P2T1(ii)indexcbrowserSS.png)
 
-Caption: 
+Caption: Screenshot of my browser showing the output of the index.c program
 
 
 ###  Task 2 (10 pts). A simple PHP Web Application with user input.
@@ -161,7 +163,7 @@ a. Summarize and demonstrate with a screenshot that you have successfully develo
 
 ![HTTP](/images/P2T2(i)helloworldphpbrowserSS.png)
 
-Caption: 
+Caption: Screenshot that shows I successfully developed a simple helloworld.php PHP page with my name and PHP configuration
 
 
 
@@ -182,7 +184,7 @@ http://localhost/echo.php?data=Charan Sai Venaganti
 
 ![HTTP](/images/P2T2(ii)echophpbrowsrSS.png)
 
-Caption; 
+Caption: Here is the screenshot of my browser showing the output of echo.php with my name.
 
 
 #### Yes there are risks in this process:
@@ -201,15 +203,11 @@ SS SS of request and response from wireshark
 
 ![HTTP](/images/P3T3(i)Request.png)
 
-Caption: 
+Caption: Screenshot of the request I made in the wireshark with my name
 
 ![HTTP](/images/P3T3(ii)Response.png)
 
-Caption : 
-
-
-
-
+Caption : Screenshot of the response I made in the wireshark with my name.
 
 
 
@@ -222,22 +220,22 @@ SS- browser screenshot of charan sai venaganti using CURL.
 
 ![HTTP](/images/P3T3(ii)POSTCURLBROWSERRESPONSESS.png)
 
-Caption: 
+Caption: Screenshot of my browser showing the output using CURL with my name.
 
 
 ![HTTP](/images/P3T3(ii)POSTCURLREQUESTOFWIRESHARK.png)
 
-Caption: 
+Caption: Screenshot of the request I made in the wireshark.
 
 
 
 ![HTTP](/images/P3T3(ii)CURLHTTPSTREAMOFWIRESHARK.png)
 
-Caption: 
+Caption: Screenshot of the HTTP Stream in the wireshark
 
 #### c. Compare the similarity/difference between HTTP POST Request and HTTP GET Request and between the two HTTP Responses above. **(2.5 pts)**    
 
-If we use GET request the response will be clearly seen in the URL .Hence it is easy for the attackers to attack.Whereas if we use POST request , the response will be hidden .Hence there are less chances of getting attacked by the browsers.
+If we use GET request the response will be clearly seen in the URL .Hence it is easy for the attackers to attack.Whereas if we use POST request , the response will be hidden .Hence there are less chances of getting attacked by the hackers.
 
 
 
