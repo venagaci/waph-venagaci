@@ -28,7 +28,7 @@ I used a network packet analyzer called Wireshark which tried to capture network
 Caption: 
  
 
- ![P1](/images/P1T1HTTPresponse.png)
+![P1](/images/P1T1HTTPresponse.png)
 
  Caption: 
 
@@ -36,7 +36,7 @@ Caption:
 
 
 
- ![P1](/images/P1T1HTTPStream.png)
+![P1](/images/P1T1HTTPStream.png)
 
 Caption:  
 
@@ -53,15 +53,14 @@ connection to a server to send and receive data to/from the server.In this task 
 2. I Started up the Wireshark packet sniffer and filtered only “http” in the search bar and began the packet capture as in Task 1. Then I opened the terminal to connect to the webserver at port 80 by typing $ telnet example.com 80. But here I used Http/1.0
    
 3. Then I saw the data response from the server (HTTP Response). and I Stoped Wireshark packets capture and examined the HTTP Request and Response messages and compared with similar ones in Task 1.
-
-
- 
-Caption: 
  
 
 #### A screenshot of your terminal showing the HTTP Request (you typed) and HTTP response from the server.
 
-SS of request in terminal typed and http response.
+![HTTP req](/images/P1T2(i).png)
+
+Caption: 
+
 
 #### A screenshot of the HTTP Request message (you typed in telnet above) in Wireshark as in Task 1. Is there any difference between this HTTP Request message and the one the browser sent in Task 1? Hints: What fields are missing in this request compared to the one the browser sent?
 
