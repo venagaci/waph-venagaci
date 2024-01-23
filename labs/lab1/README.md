@@ -64,14 +64,21 @@ Caption:
 
 #### A screenshot of the HTTP Request message (you typed in telnet above) in Wireshark as in Task 1. Is there any difference between this HTTP Request message and the one the browser sent in Task 1? Hints: What fields are missing in this request compared to the one the browser sent?
 
-SS of request message 1.0
+![HTTP req](/images/P1T2(ii)Request.png)
+
+Caption: 
+
 
 Yes there are several differences:
 The second HTTP request lacks key headers such as User-Agent, Accept, Accept-Language, Accept-Encoding, Cache-Control, Pragma, and Connection, and it uses a different HTTP version (HTTP/1.0) compared to the first request.
 
 #### A screenshot of the HTTP Response message in Wireshark that the server responded to your request. Is there any difference between this HTTP Response message and the one in Task 1? 
 
-SS-HTTP response message of 1.0.
+![HTTP req](/images/P1T2(iii)Response.png)
+
+Caption: 
+
+
 
 There are more differences in the response message when compared to task 1 they are:The HTTP responses in Task 1 and Task 2 differ in several aspects. Notably, the HTTP versions are distinct, with Task 1 using HTTP/1.1 and Task 2 using HTTP/1.0. The server headers differ, with Task 1 showing "Server: nginx" and Task 2 indicating "Server: ECS (cha/8094)." Cache-Control directives vary, as Task 1 includes "public, must-revalidate, max-age=0, s-maxage=3600," while Task 2 specifies "max-age=604800." Content-Type headers also differ, with Task 1 having "Content-Type: text/html" and Task 2 presenting "Content-Type: text/html; charset=UTF-8." Additionally, the Date, Etag, Expires, Last-Modified, X-Cache, and Content-Length headers exhibit disparities between the two responses. Task 2 uniquely includes Etag, Expires, Last-Modified, and X-Cache headers, while Task 1 lacks these. Content-Length values also differ, with Task 1 having a length of 90 and Task 2 with 1256.
 
@@ -91,7 +98,10 @@ $ sudo systemctl restart apache2.
 5. CGI programs are stored in /usr/lib/cgibin folder will be invoked by Apache2 when requested. So I needed to copy any CGI programs into this folder using command $ sudo cp helloworld.cgi /usr/lib/cgi-bin.
 6. I went to browser and typed http://localhost/cgi-bin/helloworld.cgi
 
- SS-browser output screenshot of helloworld.cgi program
+
+![HTTP req](/images/P2T1(i).png)
+
+Caption: 
 
  
 b. Summarize and demonstrate with a screenshot that you can write another C CGI program and deploy it with a simple HTML template provided on https://www.w3schools.com/html/Links to an external site. with proper title, heading, and paragraph, i.e., the course and your information should be there. Include the source code of the file in the report. An example of code inclusion is below.
@@ -127,9 +137,13 @@ Here is the index.c program I have used.
      }
       
       
+![HTTP req](/images/P2T1(ii)index.cterminal-ss.png)
+
+Caption: 
 
 
-SS- browser screenshot of index.c output
+![HTTP req](/images/P2T1(ii)index.cbrowser-SS.png)
+
 
 ###  Task 2 (10 pts). A simple PHP Web Application with user input.
 
