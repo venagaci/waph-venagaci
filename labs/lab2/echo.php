@@ -1,3 +1,3 @@
 <?php 
-     echo $_REQUEST["data"];
+    echo $_REQUEST["data"];
 ?>
