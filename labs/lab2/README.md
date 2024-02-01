@@ -137,7 +137,7 @@ Caption: Screenshot before clicking email
 
 
 ![Charan's headshot](images/T1afterclickingemail.png)
-Caption: Screenshot before after email
+Caption: Screenshot after clicking email
 
 
 
