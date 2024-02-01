@@ -210,40 +210,44 @@ SS: T2ajaxss
 Here is the html code included:
 
 ```html
-    <div id="menubar">
-        <h3>Student: Charan Sai</h3>
-        <img src="/images/headshot.jpg" alt="My headshot" width="50">
+    <!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://waph-uc.github.io/style1.css">
+    <meta charset="utf-8">
 
-        <div id="digital-clock"></div>
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
 
-        <canvas id="analog-clock" width="150" height="150" style="background-color: #999"></canvas>
-        <script src="https://waph-uc.github.io/clock.js"></script>
-        <script type="text/javascript">
-            function displayTime() {
-                document.getElementById('digital-clock').innerHTML = "Current time: " + new Date();
-            }
-            setInterval(displayTime, 500);
+        .round {
+            border-radius: 8px;
+        }
 
-            var canvas = document.getElementById("analog-clock");
-            var ctx = canvas.getContext("2d");
-            var radius = canvas.height / 2;
-            ctx.translate(radius, radius);
-            radius = radius * 0.90;
-            setInterval(drawClock, 1000);
-
-            function drawClock() {
-                drawFace(ctx, radius);
-                drawNumbers(ctx, radius);
-                drawTime(ctx, radius);
-            }
-        </script>
-    </div>
-    <div id="main">
-        <!-- Rest of your HTML content goes here -->
+        #response {
+            background-color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h1 style="color:blue";>Web Application Programming and Hacking</h1>
+        <h2>Front-end Web Development Lab</h2>
+        <h3>Instructor: Dr. Phu Phung</h3>
     </div>
 </body>
 </html>
-
 
 ```
 
