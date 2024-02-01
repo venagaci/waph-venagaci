@@ -67,7 +67,7 @@ Here is code included:
 
 ```
 
-![Charan's headshot](/images/T1indexhtmlpagess.png)
+![Charan's headshot](lab2/images/T1indexhtmlpagess.png)
 ####  b. Simple JavaScript (15 pts)
 
 - Inline JavaScript code in HTML tags to display the current date/time
