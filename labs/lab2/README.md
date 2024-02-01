@@ -68,6 +68,9 @@ Here is code included:
 ```
 
 ![Charan's headshot](images/T1indexhtmlpagess.png)
+
+Caption: Screenshot with with basic tags, an image of your headshot, and a form.
+
 ####  b. Simple JavaScript (15 pts)
 
 - Inline JavaScript code in HTML tags to display the current date/time
@@ -83,7 +86,7 @@ Here is the HTML code included;
 
 ```
 ![Charan's headshot](images/T1timeSS.png)
-
+Caption: Screenshot displays the current date/time
 
 - JavaScript code in a <script> tag to display a digital clock
 
@@ -99,8 +102,10 @@ Here is the HTML code included;
 
 ```
 ![Charan's headshot](images/T1digitalclockSS.png)
+Caption: Screenshot displays the digital clock
 
- SS: T1digitalclockSS
+
+
 
 - JavaScript code in a JavaScript file and code in the HTML page to show/hide your email when clicked.
 
@@ -125,16 +130,17 @@ function showhideEmail() {
 ```
 
 ![Charan's headshot](images/T1beforeclickingemail.png)
-SS: T1beforeclickingemail
-Caption: 
+
+
+Caption: Screenshot before clicking email
 
 
 
 ![Charan's headshot](images/T1afterclickingemail.png)
-Caption:
+Caption: Screenshot before after email
 
 
-SS: T1afterclickingemail
+
 
 - Display an analog clock using an external JavaScript code and code in your HTML page.
 
@@ -163,9 +169,10 @@ Here is the code included:
 ```
 
 ![Charan's headshot](images/T1clockouput.png)
-Caption: 
+Caption: Screenshot of clock output
 
-SS: T1clockouput
+
+
 
 ### Task 2: Ajax, CSS, jQuery, and Web API integration
 
@@ -202,8 +209,9 @@ Here is the code included:
 ```
 
 ![Charan's headshot](images/T2ajaxss.png)
-Caption: 
-SS: T2ajaxss
+Caption: Screenshot of Ajax testing
+
+
 
 #### b. CSS (7.5 pts) Inline, Internal , External
 
@@ -252,12 +260,13 @@ Here is the html code included:
 ```
 
 ![Charan's headshot](images/T2cssfirstSS.png)
-Caption: 
+Caption: Screenshot of CSS 
 
-SS: T2cssfirstSS  & SS; T2csssecondSS
+
 
 ![Charan's headshot](images/T2csssecondSS.png)
 
+Caption:  Screenshot of CSS 
 
 
 ####  c. jQuery (5 pts) 
@@ -305,10 +314,11 @@ Here is the code included for **i.**   &     **ii.**
 ```
 
 ![Charan's headshot](images/T2jquerygetss.png)
-Caption: 
+Caption: Screenshot of jquery for GET
 
 ![Charan's headshot](images/T2jquerypostss.png)
-Caption: 
+Caption: Screenshot of jquery for POST
+
 
 Screenshot for   **i.**   SS: T2jquerygetss
 Screenshot for   **ii.**  SS: T2jquerypostss
@@ -330,7 +340,7 @@ $.get("https://v2.jokeapi.dev/joke/Programming?type=single",
 
 ```
 ![Charan's headshot](images/T2webapiconsoleSS.png)
-Caption: 
+Caption: Screenshot of WebApi console 
 
 SS: T2webapiconsoleSS
 
@@ -349,8 +359,8 @@ async function guessAge(name) {
 
 ```
 ![Charan's headshot](images/T2apifetchss.png)
+Caption: Screenshot of API Fetch
 
-SS: T2apifetchss
 
 
 
