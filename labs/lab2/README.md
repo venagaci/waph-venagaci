@@ -109,9 +109,12 @@ Caption: Screenshot displays the digital clock
 
 - JavaScript code in a JavaScript file and code in the HTML page to show/hide your email when clicked.
 
-Here is the HTML code included;
+Here is the email.js code included;
+
+email.js:
 
 ```html
+
 
 var shown = false;
 
