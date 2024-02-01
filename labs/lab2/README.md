@@ -182,7 +182,7 @@ Here is the code included:
 ```
 SS: T2ajaxss
 
-#### b. CSS (7.5 pts)
+#### b. CSS (7.5 pts) Inline, Internal , External
 
 Here is the html code included:
 
@@ -223,6 +223,93 @@ Here is the html code included:
         <h2>Front-end Web Development Lab</h2>
         <h3>Instructor: Dr. Phu Phung</h3>
     </div>
+
+```
+
+SS: T2cssfirstSS  & SS; T2csssecondSS
+
+####  c. jQuery (5 pts) 
+
+**i.** and **ii.**
+
+Here is the code included for **i.**   &     **ii.**
+
+```html
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<div>
+        <i>Ajax request</i>
+         " Your Input: "
+         <input name="data" onkeypress="console.log('you have pressed a key')" id="data">
+         <input class="button round" type="button" value="Ajax Echo" onclick="getEcho()">
+         <input class="button round" type="button" value="Ajax jQuery GET" onclick="jQueryAjax()">
+         <input class="button round" type="button" value="Ajax jQuery POST" onclick="jQueryAjaxPost()">
+<script>
+ function jQueryAjax() {
+            var input = $("#data").val();
+            if (input.length == 0) {
+                return;
+            }
+            $.get("echo.php?data=" + input,
+                function(result) {
+                    $("#response").html("Response from server:" + result);
+                });
+            $("#data").val("");
+        }
+
+        function jQueryAjaxPost() {
+            var input = $("#data").val();
+            if (input.length == 0) return;
+            $.post("echo.php", { data: input },
+                function(result) {
+                    $("#response").html("Response from server:" + result);
+                }
+            );
+            $("#data").val("");
+        } 
+</script>
+
+```
+
+Screenshot for   **i.**   SS: T2jquerygetss
+Screenshot for   **ii.**  SS: T2jquerypostss
+
+
+#### d. Web API integration (10 pts)
+
+**i.**
+
+Here is the Code included:
+
+```html
+
+$.get("https://v2.jokeapi.dev/joke/Programming?type=single",
+            function(result) {
+                console.log("From jokeAPI: " + JSON.stringify(result));
+                $("#response").html("A programming joke of the day: " + result.joke);
+            })
+```
+
+SS: T2webapiconsoleSS
+
+**ii.**
+
+Here is the code included:
+
+```html
+
+async function guessAge(name) {
+            const response = await fetch("https://api.agify.io/?name=" + name);
+            const result = await response.json();
+            $("#response").html("Hi " + name + ", your age should be " + result.age);
+        }
+
+```
+SS: T2apifetchss
+
+
+
+
 
 
     
