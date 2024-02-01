@@ -320,8 +320,6 @@ Caption: Screenshot of jquery for GET
 Caption: Screenshot of jquery for POST
 
 
-Screenshot for   **i.**   SS: T2jquerygetss
-Screenshot for   **ii.**  SS: T2jquerypostss
 
 
 #### d. Web API integration (10 pts)
