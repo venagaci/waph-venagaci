@@ -340,7 +340,6 @@ $.get("https://v2.jokeapi.dev/joke/Programming?type=single",
 ![Charan's headshot](images/T2webapiconsoleSS.png)
 Caption: Screenshot of WebApi console 
 
-SS: T2webapiconsoleSS
 
 **ii.**
 
