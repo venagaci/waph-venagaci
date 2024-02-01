@@ -22,6 +22,7 @@ Repository's URL: [https://github.com/venagaci/waph-venagaci]
 I developed a simple HTML file named `waph-venagaci.html` with basic tags , an image of my headshot and form.
 
 Here is code included: 
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -29,17 +30,18 @@ Here is code included:
     <meta charset="utf-8">
 </head>
 <body>
- <div id="top">
+    <div id="top">
         <h1>Web Application Programming and Hacking</h1>
         <h2>Front-end Web Development Lab</h2>
         <h3>Instructor: Dr. Phu Phung</h3>
- </div>
- <div id="menubar">
+    </div>
+    <div id="menubar">
         <h3>Student: Charan Sai</h3>
         <img src="/images/headshot.jpg" alt="My headshot" width="50">
 
         <div id="digital-clock"></div>
-<div id="main">
+    </div>
+    <div id="main">
         <p> A simple HTML page </p>
         Using the <a href="https://www.w3schools.com/html">W3Schools template</a>
 
@@ -59,7 +61,10 @@ Here is code included:
                 <input type="submit" value="submit">
             </form>
         </div>        
-</div>
+    </div>
+</body>
+</html>
+
 ```
 
 Screenshot: T1indexhtmlpagess
@@ -72,10 +77,11 @@ Here is the HTML code included;
 
 ```html
 <div>
-     <b>Experiments with JavaScript code</b><br>
-     <i>Inlined JavaScript</i>
-     <div id="date" onclick="document.getElementById('date').innerHTML= Date()">Click here to show Date()</div>
+    <b>Experiments with JavaScript code</b><br>
+    <i>Inlined JavaScript</i>
+    <div id="date" onclick="document.getElementById('date').innerHTML = Date()">Click here to show Date()</div>
 </div>
+
 ```
 
 SS: T1timeSS
@@ -85,12 +91,13 @@ SS: T1timeSS
 Here is the HTML code included;
 
  ```html
-<script type="text/javaScript">
-            function displayTime() {
-                document.getElementById('digital-clock').innerHTML = "Current time: " + new Date();
-            }
-            setInterval(displayTime, 500);
+<script type="text/javascript">
+    function displayTime() {
+        document.getElementById('digital-clock').innerHTML = "Current time: " + new Date();
+    }
+    setInterval(displayTime, 500);
 </script>
+
 ```
 
  SS: T1digitalclockSS
@@ -114,6 +121,7 @@ function showhideEmail() {
     }
 }
 
+
 ```
 <div id="digital-clock"></div>
 
@@ -130,20 +138,20 @@ Here is the code included:
 <script src="https://waph-uc.github.io/clock.js"></script>
 
 <script>
+    var canvas = document.getElementById("analog-clock");
+    var ctx = canvas.getContext("2d");
+    var radius = canvas.height / 2;
+    ctx.translate(radius, radius);
+    radius = radius * 0.90;
+    setInterval(drawClock, 1000);
 
-var canvas = document.getElementById("analog-clock");
-            var ctx = canvas.getContext("2d");
-            var radius = canvas.height / 2;
-            ctx.translate(radius, radius);
-            radius = radius * 0.90;
-            setInterval(drawClock, 1000);
-
-            function drawClock() {
-                drawFace(ctx, radius);
-                drawNumbers(ctx, radius);
-                drawTime(ctx, radius);
-            }
+    function drawClock() {
+        drawFace(ctx, radius);
+        drawNumbers(ctx, radius);
+        drawTime(ctx, radius);
+    }
 </script>
+
 ```
 SS: T1clockouput
 
@@ -155,11 +163,11 @@ Here is the code included:
 
 ```html
 <div>
-        <i>Ajax request</i>
-        <br>
-        " Your Input: "
-        <input name="data" onkeypress="console.log('you have pressed a key')" id="data">
-        <script type="text/javascript">
+    <i>Ajax request</i>
+    <br>
+    " Your Input: "
+    <input name="data" onkeypress="console.log('you have pressed a key')" id="data">
+    <script type="text/javascript">
         function getEcho() {
             var input = document.getElementById("data").value;
             if (input.length == 0) {
@@ -176,7 +184,7 @@ Here is the code included:
             xhttp.send();
             document.getElementById("data").value = "";
         }
-        </script>
+    </script>
 </div>
 
 ```
@@ -187,42 +195,40 @@ SS: T2ajaxss
 Here is the html code included:
 
 ```html
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://waph-uc.github.io/style1.css">
-    <meta charset="utf-8">
+    <div id="menubar">
+        <h3>Student: Charan Sai</h3>
+        <img src="/images/headshot.jpg" alt="My headshot" width="50">
 
-    <style>
-        .button {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 5px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 12px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
+        <div id="digital-clock"></div>
 
-        .round {
-            border-radius: 8px;
-        }
+        <canvas id="analog-clock" width="150" height="150" style="background-color: #999"></canvas>
+        <script src="https://waph-uc.github.io/clock.js"></script>
+        <script type="text/javascript">
+            function displayTime() {
+                document.getElementById('digital-clock').innerHTML = "Current time: " + new Date();
+            }
+            setInterval(displayTime, 500);
 
-        #response {
-            background-color: #ff9800;
-        }
-    </style>
-</head>
-<body>
-    <div id="top">
-        <h1 style="color:blue"; >Web Application Programming and Hacking</h1>
-        <h2>Front-end Web Development Lab</h2>
-        <h3>Instructor: Dr. Phu Phung</h3>
+            var canvas = document.getElementById("analog-clock");
+            var ctx = canvas.getContext("2d");
+            var radius = canvas.height / 2;
+            ctx.translate(radius, radius);
+            radius = radius * 0.90;
+            setInterval(drawClock, 1000);
+
+            function drawClock() {
+                drawFace(ctx, radius);
+                drawNumbers(ctx, radius);
+                drawTime(ctx, radius);
+            }
+        </script>
     </div>
+    <div id="main">
+        <!-- Rest of your HTML content goes here -->
+    </div>
+</body>
+</html>
+
 
 ```
 
@@ -238,14 +244,14 @@ Here is the code included for **i.**   &     **ii.**
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <div>
-        <i>Ajax request</i>
-         " Your Input: "
-         <input name="data" onkeypress="console.log('you have pressed a key')" id="data">
-         <input class="button round" type="button" value="Ajax Echo" onclick="getEcho()">
-         <input class="button round" type="button" value="Ajax jQuery GET" onclick="jQueryAjax()">
-         <input class="button round" type="button" value="Ajax jQuery POST" onclick="jQueryAjaxPost()">
-<script>
- function jQueryAjax() {
+    <i>Ajax request</i>
+    " Your Input: "
+    <input name="data" onkeypress="console.log('you have pressed a key')" id="data">
+    <input class="button round" type="button" value="Ajax Echo" onclick="getEcho()">
+    <input class="button round" type="button" value="Ajax jQuery GET" onclick="jQueryAjax()">
+    <input class="button round" type="button" value="Ajax jQuery POST" onclick="jQueryAjaxPost()">
+    <script>
+        function jQueryAjax() {
             var input = $("#data").val();
             if (input.length == 0) {
                 return;
@@ -266,8 +272,9 @@ Here is the code included for **i.**   &     **ii.**
                 }
             );
             $("#data").val("");
-        } 
-</script>
+        }
+    </script>
+</div>
 
 ```
 
@@ -284,10 +291,11 @@ Here is the Code included:
 ```html
 
 $.get("https://v2.jokeapi.dev/joke/Programming?type=single",
-            function(result) {
-                console.log("From jokeAPI: " + JSON.stringify(result));
-                $("#response").html("A programming joke of the day: " + result.joke);
-            })
+    function(result) {
+        console.log("From jokeAPI: " + JSON.stringify(result));
+        $("#response").html("A programming joke of the day: " + result.joke);
+    });
+
 ```
 
 SS: T2webapiconsoleSS
@@ -299,10 +307,11 @@ Here is the code included:
 ```html
 
 async function guessAge(name) {
-            const response = await fetch("https://api.agify.io/?name=" + name);
-            const result = await response.json();
-            $("#response").html("Hi " + name + ", your age should be " + result.age);
-        }
+    const response = await fetch("https://api.agify.io/?name=" + name);
+    const result = await response.json();
+    $("#response").html("Hi " + name + ", your age should be " + result.age);
+}
+
 
 ```
 SS: T2apifetchss
