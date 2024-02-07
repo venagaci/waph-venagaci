@@ -1,5 +1,5 @@
 <?php 
-    $inputData=$_REQUEST["data"];
+    
      if(empty($_REQUEST["data"])){
          exit("please enter the input field 'data'");  
           }
