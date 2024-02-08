@@ -45,6 +45,19 @@
                 document.getElementById('digital-clock').innerHTML = "Current time: " + new Date();
             }
             setInterval(displayTime, 500);
+            function validateInput(inputId) {
+                var input = document.getElementById(inputId).value;
+                if(input.length == 0) {
+                    alert("PLease enter some text");
+                return false;
+                }
+                return true;
+            }
+            function encodeInput(input){
+                   const encodedData = document.createElement('div');
+                   encodedData.innerText=input;
+                   return encodedData.innerHTML;
+            }
         </script>
 
         <canvas id="analog-clock" width="150" height="150" style="background-color: #999"></canvas>
@@ -54,7 +67,7 @@
                 document.getElementById('digit-clock').innerHTML = "Current time: " + new Date();
             }
             setInterval(displayTime, 500);
-
+            
             // Code for adding the analog code which is called by the canvas TASK-1 Part 2-(4)
 
             var canvas = document.getElementById("analog-clock");
@@ -81,14 +94,15 @@
             <i>Form with an HTTP GET Request</i>
             
             <form action="/echo.php" method="GET" onsubmit="return validateInput('data-get')">
-                Your input:<input name="data" id="data-get" onkeyup="console.log('you have pressed a key')">
-                <input type="submit" value="submit">
+                 <lable for="data"> Enter the input text</lable>
+                 Your input:<input name="data" id="data-get" onkeyup="console.log('you have pressed a key')">
+                 <input type="submit" value="submit">
             </form>
         </div>
         <div>
             <i>Form with an HTTP POST Request</i>
-            <form action="/echo.php" method="POST" name="echo_post">
-                Your input:<input name="data" onkeypress="console.log('you have pressed a key')">
+            <form action="/echo.php" method="POST" onsubmit="return validateInput('data-post')">
+                Your input:<input name="data" id="data-get" onkeyup="console.log('you have pressed a key')">
                 <input type="submit" value="submit">
             </form>
         </div>
@@ -97,7 +111,8 @@
         <div>
             <b>Experiments with JavaScript code</b><br>
             <i>Inlined JavaScript</i>
-            <div id="date" onclick="document.getElementById('date').innerHTML= Date()">Click here to show Date()</div>
+            <div id="date" onclick="document.getElementById('date').innerTEXT= Date()">Click here to show Date()</div>
+
         </div>
         <hr>
         <div id="email" onclick="showhideEmail()">Show my email</div>
@@ -127,12 +142,15 @@
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     console.log("Received data =" + xhttp.responseText);
-                    document.getElementById("response").innerHTML = "Response from server:" + xhttp.responseText;
+                    document.getElementById("response").innerHTML = encodeInput(xhttp.responseText);
                 }
             }
             xhttp.open("GET", "echo.php?data=" + input, true);
             xhttp.send();
             document.getElementById("data").value = "";
+        }
+        function printResult(result){
+            $("#response").html(encodeInput(result));
         }
 
         function jQueryAjax() {
@@ -161,13 +179,22 @@
         $.get("https://v2.jokeapi.dev/joke/Programming?type=single",
             function(result) {
                 console.log("From jokeAPI: " + JSON.stringify(result));
-                $("#response").html("A programming joke of the day: " + result.joke);
-            })
+               if (result && result.joke) {
+                     var encodedJoke = encodeInput(result.joke);
+                     $("#response").text("Programming joke of the day: " +encodedJoke);
+                     }
+                     else{
+                     $("#response").text("Could not retrieve a joke at this time.");
+                     }
+            });
 
         async function guessAge(name) {
             const response = await fetch("https://api.agify.io/?name=" + name);
             const result = await response.json();
-            $("#response").html("Hi " + name + ", your age should be " + result.age);
+            
+            if(result.age==null || result.age==0)
+                 return $("#response").text("Sorry, the webserver threw an error cannot retrieve your age");
+                 $("#response").text("Hello "+name+" ,your age should be "+result.age);
         }
     </script>
 </body>
